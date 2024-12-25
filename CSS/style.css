@@ -142,3 +142,42 @@ ul > li {
   transform: scale(1.05); /* Увеличение при наведении */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
+
+
+.grid-container {
+  display: grid; /* Включение гридов */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Колонки адаптируются */
+  gap: 20px; /* Расстояние между элементами */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grids {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для карточек */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grids:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Более яркая тень при наведении */
+}
+
+/* Изображения */
+.grids img {
+  width: 100%;
+  height: 200px; /* Фиксированная высота изображений */
+  object-fit: cover; /* Обрезка изображений по размеру контейнера */
+  border-bottom: 1px solid #ccc; /* Разделительная линия */
+}
+
+/* Текст под изображением */
+textPodImg {
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+}
