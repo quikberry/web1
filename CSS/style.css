@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+  
+}
+
+h1, h2, h3 {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+a:hover {
+  color: #0056b3;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+p.important {
+  font-weight: bold;
+  color: red;
+}
+
+img {
+  transition: transform 5s ease;
+}
+img:hover {
+  transform: rotate(360deg);
+}
+
+.advantages {
+  background-color: #d4edda;
+  border-left: 5px solid #28a745;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.disadvantages {
+  background-color: #f8d7da;
+  border-left: 5px solid #dc3545;
+  padding: 10px;
+}
+
+
+
+h1 + p {
+    font-size: 25px;
+    color: gray;
+}
+
+ul > li {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            transition: transform 5s ease;
+        }
+
+        .rotationLi:hover {
+            transform: rotate(720deg);
+            color: purple;
+        }
+		
+        
