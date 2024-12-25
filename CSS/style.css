@@ -1,17 +1,26 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
   font-family: 'Roboto', sans-serif;
-  text-align: center;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
-  text-align: justify;
   color: #333;
-  
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(to right, #8d22be, #efef29);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0;
 }
 
-h1, h2, h3 {
+h2, h3 {
   color: green;
   font-weight: bold;
   text-align: center;
@@ -31,49 +40,71 @@ p {
   line-height: 1.5;
   color: #333;
 }
+
 p.important {
   font-weight: bold;
   color: red;
 }
 
+.history {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  min-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+} 
+
 img {
-  transition: transform 5s ease;
+  max-width: 100%;
+  height: auto;
 }
-img:hover {
-  transform: rotate(360deg);
+
+.image-left {
+  float: left;
+  margin-right: 10px;
 }
+
+.image-right {
+  float: right;
+  margin-left: 10px;
+}
+
 
 .advantages {
   background-color: #d4edda;
   border-left: 5px solid #28a745;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 20px;
+  margin: 20px 0;
 }
 
 .disadvantages {
   background-color: #f8d7da;
   border-left: 5px solid #dc3545;
-  padding: 10px;
+  padding: 20px;
+  margin: 20px 0;
 }
-
 
 
 h1 + p {
-    font-size: 25px;
-    color: gray;
+  font-size: 25px;
+  color: gray;
 }
 
 ul > li {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px;
-            font-size: 20px;
-            transition: transform 5s ease;
-        }
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  transition: transform 5s ease;
+}
 
-        .rotationLi:hover {
-            transform: rotate(720deg);
-            color: purple;
-        }
-		
-        
+.rotationLi:hover {
+  transform: rotate(720deg);
+  color: purple;
+}
