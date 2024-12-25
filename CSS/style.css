@@ -108,3 +108,37 @@ ul > li {
   transform: rotate(720deg);
   color: purple;
 }
+
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет перенос элементов на новую строку */
+  justify-content: space-between; /* Распределяет элементы по горизонтали */
+  align-items: center; /* Выравнивание элементов по вертикали */
+  gap: 20px; /* Расстояние между flex-элементами */
+  padding: 20px;
+  background: linear-gradient(to right, #f4f4f9, #dfe6e9); /* Градиент */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex-элементы */
+.flex-item {
+  flex: 1 1 30%; /* Элементы занимают 30% ширины контейнера, сжимаются и растягиваются */
+  min-width: 200px; /* Минимальная ширина элемента */
+  max-width: 300px; /* Максимальная ширина элемента */
+  padding: 20px;
+  background-color: rgba(40, 167, 69, 0.1); /* Цвет с прозрачностью */
+  border: 1px solid hsl(120, 50%, 75%); /* Цвет в формате HSL */
+  border-radius: 10px;
+  color: #333; /* Цвет текста в HEX */
+  text-align: justify;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация наводки */
+}
+
+.flex-item:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
